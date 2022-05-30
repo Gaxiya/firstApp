@@ -1,0 +1,8 @@
+.content{
+    grid-area: c;
+    display: flex;
+    flex-direction: column;
+  }
+  .content div{
+      align-self: center;
+  }
