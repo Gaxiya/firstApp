@@ -15,12 +15,12 @@ class CreatePost extends React.Component{
     }
     update(){
         let text=this.myRef.current.value
-        this.props.dispatch(profileUpdateAction(text))
+        this.props.update(text)
     }
     componentWillUnmount() {
     }
     addpost(){
-        this.props.dispatch(profileAddAction())
+        this.props.add()
     }
     render(){
         

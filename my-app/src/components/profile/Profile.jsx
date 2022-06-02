@@ -9,8 +9,8 @@ function Profile (props) {
     <div className={clasess.content}>
         <img src={town} className={clasess.content__town}  alt="town" />
         <img src={pes} className={clasess.content__pes}  alt="pes" />
-        <CreatePost dispatch={props.dispatch} new={props.new} />
-        <MyPosts post={props.posts}/>
+        <CreatePost add={props.add} update={props.update} new={props.profile.newText} />
+        <MyPosts post={props.profile.posts}/>
     </div>)
 }
 export default Profile

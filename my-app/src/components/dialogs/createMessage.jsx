@@ -1,7 +1,7 @@
 // import clasess from'./createPost.module.css';
 import React from 'react';
 
-import { dialogsUpdateAction,dialogsAddAction } from './../../Redux/actions';
+// import { dialogsUpdateAction,dialogsAddAction } from './../../Redux/actions';
 
 class CreateMessage extends React.Component{
 
@@ -17,18 +17,18 @@ class CreateMessage extends React.Component{
     update(){
         let text=this.Ref.current.value
         
-        this.props.props.dispatch(dialogsUpdateAction(text))
+        this.props.update(text)
     }
     componentWillUnmount() {
     }
     addMessage(){
-        this.props.props.dispatch(dialogsAddAction())
+        this.props.add()
     }
     render(){
         
         return(
         <div>
-            <textarea  onChange={this.update} ref={this.Ref} value={ this.props.props.new} name="" id="" ></textarea>
+            <textarea  onChange={this.update} ref={this.Ref} value={ this.props.new} name="" id="" ></textarea>
             <button onClick={this.addMessage}>  add post
             </button>
         </div>

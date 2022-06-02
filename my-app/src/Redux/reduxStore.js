@@ -1,7 +1,7 @@
 
 import rootReducer from './reducer';
 import { configureStore } from '@reduxjs/toolkit';
-import { dialogsUpdateAction } from './actions';
+
 
 const preloadedState={
 dialogsPage:{
@@ -29,10 +29,17 @@ profilePage:{
         {text:`Post`,id:4}
         ],
         newText:''
-                            }
+                            },
+
+    users:[
+        {id:1,name:'Dima',  status:'I\'m boss',followed:true,location:{city:'Minsk',country:'Belarus'},      ava:'../images/zeroAva.png'},
+        {id:2,name:'Sasha',  status:'I\'m boss too',followed:true,location:{city:'Kiev',country:'Ukraine'},  ava:'../images/zeroAva.png'},
+        {id:3,name:'Sveta',  status:'I\'m boss too',followed:true,location:{city:'Moscow',country:'Russia'}, ava:'../images/zeroAva.png'},
+        {id:4,name:'Andrey', status:'I\'m boss too',followed:true,location:{city:'Minsk',country:'Belarus'}, ava:'../images/zeroAva.png'},
+    ]
     }
     
-let store=configureStore({reducer:rootReducer,preloadedState});
+let store=configureStore({reducer:rootReducer,preloadedState,});
 
 
 export default store
