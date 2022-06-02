@@ -1,0 +1,18 @@
+.content{
+  display: flex;
+  flex-direction: column;
+}
+
+  .content__town{
+    align-self: center;
+    width :75%;
+  height: 194px;
+  }
+  .content__pes{
+    width: 164px;
+    height: 154px;
+  }
+  /* "h h h"
+  "p margin c"
+  grid-template-rows: 19px 1fr 16px 9fr ;
+  grid-template-columns:0.5fr 2fr 0.5fr 7fr ; */

@@ -1,0 +1,34 @@
+.Header{
+    background-color: darkslateblue;
+    color: deeppink;
+    
+}
+.Dialogs{
+    display: grid;
+    grid-template-areas:'h h h'
+                        'c d c';
+    grid-template-columns: 60px 1fr 10fr;
+    grid-template-rows: 20px 2fr 10fr;
+    align-items: start;
+}
+.Contacts{
+grid-column: 2;
+grid-row: 2;
+}
+.Messages{
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+grid-row: 2;
+order: 1;
+}
+.Messages.CreateMessage{
+    justify-self:center;
+    margin-left: 50px;
+    
+}
+.Messages.CreateMessage :first-child{
+    margin-bottom: -6px;
+}
+

@@ -1,0 +1,10 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px  ;
+}
+.contact a{
+    font-family:'Times New Roman', Times, serif;
+    font-size: large;
+    text-decoration: none;
+}
