@@ -2,7 +2,8 @@
     grid-area: c;
     display: flex;
     flex-direction: column;
+    align-content: flex-start;
   }
   .content div{
-      align-self: center;
+    align-content: flex-start;
   }

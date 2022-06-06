@@ -8,11 +8,11 @@
     width :75%;
   height: 194px;
   }
-  .content__pes{
-    width: 164px;
-    height: 154px;
+  .headerOfCreator{
+    color: #47525E;
+  font-family: Lato;
+  font-size: 35px;
+  line-height: 45px;
+  width: 244px;
+  text-align: left;
   }
-  /* "h h h"
-  "p margin c"
-  grid-template-rows: 19px 1fr 16px 9fr ;
-  grid-template-columns:0.5fr 2fr 0.5fr 7fr ; */

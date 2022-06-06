@@ -1,4 +1,4 @@
-import Contacts from './contacts/contacts';
+    import Contacts from './contacts/contacts';
 import Dialog from './dialog/dialog';
 import clasess from'./dialogs.module.css';
 import React from 'react';

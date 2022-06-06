@@ -1,4 +1,4 @@
-// import clasess from'./createPost.module.css';
+import clasess from'./createMessage.module.css';
 import React from 'react';
 
 // import { dialogsUpdateAction,dialogsAddAction } from './../../Redux/actions';
@@ -27,9 +27,9 @@ class CreateMessage extends React.Component{
     render(){
         
         return(
-        <div>
-            <textarea  onChange={this.update} ref={this.Ref} value={ this.props.new} name="" id="" ></textarea>
-            <button onClick={this.addMessage}>  add post
+        <div className={clasess.createPost}>
+            <textarea className={clasess.textarea}  onChange={this.update} ref={this.Ref} value={ this.props.new} name="" id="" ></textarea>
+            <button className={clasess.button} onClick={this.addMessage}>  add post
             </button>
         </div>
     )}

@@ -49,7 +49,7 @@
 }
 .App-wrapper-content{
   grid-area: c;
-  background-color:rgba(125, 213, 240, 0.774);
+  
   display: flex;
   flex-direction: column;
   height: 904px;

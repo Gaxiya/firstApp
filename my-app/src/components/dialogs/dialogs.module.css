@@ -1,22 +1,27 @@
 .Header{
-    background-color: darkslateblue;
-    color: deeppink;
+    color: rgba(71, 82, 94, 1);
+  font-family: Lato;
+  font-size: 26px;
+  line-height: 33px;
+  text-align: left;
+    width: 112px;
     
 }
 .Dialogs{
     display: grid;
-    grid-template-areas:'h h h'
-                        'c d c';
-    grid-template-columns: 60px 1fr 10fr;
-    grid-template-rows: 20px 2fr 10fr;
+    grid-template-columns: 22px 292px 72px 659px;
+    grid-template-rows: 20px 112px 5px 677px;
     align-items: start;
 }
 .Contacts{
-grid-column: 2;
-grid-row: 2;
+grid-column: 1;
+margin-left: 22px;
+margin-top: 25px;
+
+
 }
 .Messages{
-    grid-column: 3;
+    grid-column: 4;
     display: flex;
     flex-direction: column;
     justify-content: start;

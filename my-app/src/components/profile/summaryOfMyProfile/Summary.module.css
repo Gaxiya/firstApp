@@ -1,0 +1,35 @@
+.content{
+    display: grid;
+    grid-template-columns:20px 164px 45px 262px;
+    grid-template-rows: 21px 45px 37px 200px;
+}
+.content__ava{
+    grid-column: 2;
+    grid-row: 2;
+    width: 174px;
+    height: 164px;
+}
+.name{
+    grid-column: 4;
+    grid-row: 2;
+    color: #47525E;
+    font-family: Lato;
+    font-size: 35px;
+    line-height: 45px;
+    width: 262px;
+    text-align: left;
+}
+.blockWithSummary{
+    grid-column: 4;
+    grid-row: 4;
+    color: #47525E;
+    font-family: Lato;
+    font-size: 25px;
+    line-height: 20px;
+    width: 489px;
+    text-align: left;
+}
+.blockWithSummary :last-child{
+    font-size: 25px;
+    line-height: 20px;
+}

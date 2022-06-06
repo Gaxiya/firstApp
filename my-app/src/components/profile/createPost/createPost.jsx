@@ -1,6 +1,5 @@
-// import clasess from'./createPost.module.css';
+import clasess from'./createPost.module.css';
 import React from 'react';
-import { profileAddAction,profileUpdateAction } from './../../../Redux/actions';
 
 class CreatePost extends React.Component{
 
@@ -25,9 +24,9 @@ class CreatePost extends React.Component{
     render(){
         
         return(
-        <div>
-            <textarea  onChange={this.update} ref={this.myRef} value={this.props.new} name="" id="" ></textarea>
-            <button onClick={this.addpost}>  add post
+        <div className={clasess.createPost}>
+            <textarea  className={clasess.textarea} onChange={this.update} ref={this.myRef} value={this.props.new} name="" id="" ></textarea>
+            <button className={clasess.button} onClick={this.addpost}>  add post
             </button>
         </div>
     )}
